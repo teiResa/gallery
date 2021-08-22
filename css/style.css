@@ -90,6 +90,16 @@ section {
   width: 40%;
 }
 
+.photo-gallery .photos {
+  padding-bottom:20px;
+  max-width: 75%;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
+
+
 /*  The Quote section */
 .quote {
   background: #E6DCE5;    /* hex code wouldn't load. Google thing? */
@@ -194,11 +204,7 @@ footer li a:hover {
 
 }
 
-img :hover, :active {
-  transform: scale(1.9);
-  cursor: none;
 
-}
 
 .quote {
   padding: 30px 0;
