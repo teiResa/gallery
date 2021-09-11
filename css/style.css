@@ -193,7 +193,7 @@ footer li a:hover {
     right: 50px;
     bottom: 50px;
   }
-}
+} /* end of the tablet @media section */
 
 @media screen and (max-width: 480px) {
   .btn {
