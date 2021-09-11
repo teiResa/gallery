@@ -78,12 +78,15 @@ section {
   background: #ddd;
   color: #000;
 }
+
+/*
+
 .feature {
   /*By using only % values for the widths, the features will always
   remain next to each other and be positioned horizontally,
-  irrespective of the browser width.*/
+  irrespective of the browser width.
   width: 32%;
-  display: inline-block; /* all on one line unless width is too large */
+  display: inline-block; /* all on one line unless width is too large
   font-size: 16px;
 }
 .feature img {
@@ -98,6 +101,8 @@ section {
 .photo-gallery .item {
   padding-bottom:30px;
 }
+
+*/
 
 .img-fluid {
   width:100%;
