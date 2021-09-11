@@ -98,9 +98,7 @@ section {
   max-width: 75%;
 }
 
-.photo-gallery .item {
-  padding-bottom:30px;
-}
+
 
 */
 
@@ -109,40 +107,29 @@ section {
   height: 100%;
 }
 
-.caption {
-           width:100%;
-           height:100%;
-           background:rgba(0, 0, 0, 0.7);
-           position:absolute;
-           opacity:0;
-           transition:all 300ms ease-in-out;
-          -webkit-transition:all 300ms ease-in-out;
-          -moz-transition:all 300ms ease-in-out;
-          -o-transition:all 300ms ease-in-out;
-          -ms-transition:all 300ms ease-in-out;
+.file-type{
+  position: absolute;
+  width: 2.5em;
+  border-radius: 90%;
+  background-color: lightgrey;
+  color: grey;
+  font-weight: bold;
+  opacity: 0.6;
+  right: 30px;
+  bottom: 10px;
 }
 
-.caption h1{
+                            /* Some changes were made to the lightbox file.
+                            #thumbnail:after {
+                              border: solid 2px;
+                              content: "meow meow meow";
+                            }
 
-            text-align:center;
+                             end of lightbox changes */
 
-            text-transform:uppercase;
-
-            font-size:25px;
-            color:#00bfb6;
-}
-
-.caption p{
-            text-align:center;
-
-            color:#f0f;
-}
-
-.item:hover .caption{
-            opacity: 1;
-            position: absolute;
-}
-
+                             .col-sm-6 .col-md-4 .col-lg-3 .item{
+                               padding-bottom: 15px;
+                             }
 
 /*  The Quote section */
 .quote {
@@ -246,6 +233,12 @@ footer li a:hover {
   margin-right: 20px;
 
 
+}
+
+.file-type{
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
 }
 
 
