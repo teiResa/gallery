@@ -125,8 +125,18 @@ section {
                               border: solid 2px;
                               content: "meow meow meow";
                             }
+                            */
 
-                             end of lightbox changes */
+
+                      .lb-container {
+                          min-width: 300px;
+                      }
+
+
+
+
+
+                              /*end of lightbox changes */
 
 
 
