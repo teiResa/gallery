@@ -3,14 +3,14 @@ html {
   grid-template-rows: "header" "content" "footer";
 
   background-color: pink;
-  width: 90vw;
+
 }
 
 header {
   background-color: green;
 }
 
-.content{
+{
   background-color: blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,13 +19,16 @@ header {
 aside {
   background-color: lightgreen;
   height: auto;
+  width: auto;
   width: 18vw;
   margin: 2vh;
+  float: left;
 }
 
 main{
   background-color: lightblue;
-  width: 75vw;
+  width: auto;
+  min-width: 678px;
   margin: 2vh;
 
   display: flex;
@@ -57,16 +60,37 @@ footer {
   background-color: green;
 }
 
-@media only screen and (max-width: 500px) {
-  aside {
+@media all and (max-width: 500px) {
+
+  *{
+    max-width: 500px;
 
   }
 
-  .content {
+   {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  aside {
+    background-color: lightgreen;
+    height: auto;
+
+    min-width: 400px;
+    max-width: 500px;
+    margin: 2vh;
+
+  }
+
+  main {
     background-color: lightblue;
 
     display: flex;
     flex-direction: column;
+
+    width: auto;
+    min-width: 150px;
+    max-width: 500px;
   }
 
   #sect-wireframes {
