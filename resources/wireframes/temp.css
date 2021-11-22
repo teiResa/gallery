@@ -19,8 +19,8 @@ header {
 aside {
   background-color: lightgreen;
   height: auto;
-  width: auto;
-  width: 18vw;
+  min-width: 140px;
+
   margin: 2vh;
   float: left;
 }
@@ -28,7 +28,7 @@ aside {
 main{
   background-color: lightblue;
   width: auto;
-  min-width: 678px;
+  min-width: 500px;
   margin: 2vh;
 
   display: flex;
@@ -58,6 +58,24 @@ main img {
 
 footer {
   background-color: green;
+}
+
+@media all (min-width: 500px ) and (max-width: 725px) {
+  html {
+    min-width: 500px;
+    max-width: 725px;
+  }
+
+  aside{
+    max-width: 720px;
+    min-width: 400px;
+
+    min-width: 400px;
+    max-width: 500px;
+    background-color: pink;
+  }
+
+  main {}
 }
 
 @media all and (max-width: 500px) {
