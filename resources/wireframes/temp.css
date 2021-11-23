@@ -2,16 +2,18 @@ html {
   display: grid;
   grid-template-rows: "header" "content" "footer";
 
-  background-color: pink;
+  background-color: white;
 
 }
 
 header {
   background-color: lightgrey;
   width: 100vw;
+  padding-bottom: 5px;
 
   display: flex;
   justify-content: space-evenly
+
 }
 
 header .header-main {
@@ -39,7 +41,7 @@ header .header-right {
   width: 30vw;
   display: flex;
   align-items: flex-end;
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .header-right #day-n-night {
@@ -173,7 +175,7 @@ footer {
 
 @media all and (min-width:870px) {
   aside {
-    background-color: white;
+    background-color: beige;
   }
 
   main{
