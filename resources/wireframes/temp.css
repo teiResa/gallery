@@ -29,11 +29,13 @@ main{
   background-color: lightblue;
   width: auto;
   min-width: 500px;
+  padding: 2vh;
   margin: 2vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .title-section {
@@ -42,40 +44,66 @@ main{
 
 #sect-wireframes {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 310px;
+
 }
 
 #sect-wireframes a {
-  min-width: 15vw;
-  max-width: 20vw;
-  border: 1px dotted black;
+  min-width: 151px;
+  max-width: 40vw;
+  margin: 2px;
+  padding: 4px;
+  border: 1px dotted pink;
+
 }
 
 main img {
-  min-width: 10vw;
-  max-width: 20vw;
+  min-width: 150px;
+  width: auto;
+  max-width: 40vw;
 }
 
 footer {
   background-color: green;
 }
 
+@media all (min-width:870px) {
+  aside {
+    background-color: white;
+    height: auto;
+    min-width: 140px;
+
+    margin: 2vh;
+    float: left;
+  }
+}
+
 @media all (min-width: 500px ) and (max-width: 725px) {
   html {
-    min-width: 500px;
+    min-width: 450px;
     max-width: 725px;
   }
 
   aside{
-    max-width: 720px;
-    min-width: 400px;
-
-    min-width: 400px;
-    max-width: 500px;
-    background-color: pink;
+    max-width: 100vw;
+    min-width: 95vw;
   }
 
-  main {}
+  main {
+    max-width: 100vw;
+    min-width: 95vw;
+  }
+
+  #sect-wireframes a {
+    min-width: 45vw;
+    max-width: 49vw;
+    margin: 2px;
+    padding: 4px;
+    border: 1px dotted black;
+
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -85,16 +113,18 @@ footer {
 
   }
 
-   {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+  html {
+    min-width: 200px;
+    max-width: 500px;
   }
+
+
 
   aside {
     background-color: lightgreen;
     height: auto;
 
-    min-width: 400px;
+    min-width: 200px;
     max-width: 500px;
     margin: 2vh;
 
@@ -114,6 +144,22 @@ footer {
   #sect-wireframes {
     display: flex;
     flex-direction: column;
+    align-content: center
+  }
+
+  #sect-wireframes a {
+    min-width: 70vw;
+    max-width: 90vw;
+    margin: 2px;
+    padding: 4px;
+    border: 1px dotted black;
+  }
+
+  main img {
+    min-width: 80vw;
+    width: auto;
+    max-width: 45vw;
+    display: flex;align-self: center;
   }
 
 }
