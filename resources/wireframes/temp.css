@@ -154,6 +154,12 @@ main{
 
 }
 
+.title-section-intro {
+  padding: 0 6vw 0 6vw;
+
+
+}
+
 #sect-wireframes {
   display: flex;
   justify-content: center;
