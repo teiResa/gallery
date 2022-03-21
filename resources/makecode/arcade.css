@@ -12,7 +12,7 @@ html {
 
 main {
  
- 
+ position: static;
 
  max-width: 100%;
  max-height: auto;
