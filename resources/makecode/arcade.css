@@ -1,18 +1,109 @@
-/* $orange: f76820; */
-/* blue : 006f7e , 005e6c writing:cce2ff */
-.arc-header{
- background-color: #f76820;
- display: flex;
+
+/* ~~~~~~~~~~~~~~~~~~~main content meta~~~~~~~~~~~~~~~~~~ */
+html {
+ /* overflow:hidden; */
+ overflow-x: hidden;
+ font-size:16px! important;
+ /* display: grid; */
+ 
+ height:100%;
+ width:100%;
 }
 
-.arc-header h1, p  {
+main {
+ 
+ 
+
+ max-width: 100%;
+ max-height: auto;
+ 
+    
+}
+
+main .row {
+ margin-left: 28px;
+}
+
+
+.menubar {
+ padding: 0;
+}
+
+
+
+.fixed {
+ overflow: hidden;
+ top: 0;
+ left: 0;
+ right: auto;
+ bottom: auto;
+}
+
+
+/* $orange: f76820; */
+/* blue : 006f7e , 005e6c writing:cce2ff */
+#arc-header{
+ background-color: #f76820;
+ display: flex;
+ align-content: center;
+ align-items: center;
+ width: 105%;
+ top: -1px;
+ 
+}
+
+#arc-header h1, p  {
  color: #fefefe;
 }
 
-.arc-header img {
- width: 50px;
- padding-top: 7px;
- padding-bottom: 7px;
+#arc-header h1 {
+ height: 45%;
+ font-weight: 400;
+}
+
+.pipes {
+ padding: 0 30px 0 30px;
+ font-size: 40px;
+}
+
+#arc-header p {
+ font-weight: bold;
+ font-size: 190%;
+}
+
+#arc-header img {
+ width: 60px;
+ padding: 7px 7px 7px 14px;
+}
+
+/* ~~~~~~~~~~~~~~~ banner between header and contents ~~~~~~~~~~~~~~~~~ */
+
+.banner {
+ border:0;
+ margin-top:-2.1rem!important;
+ margin-bottom:2.1rem!important;
+ padding:0;
+ border-radius:0;
+ background-repeat:no-repeat;
+ background-size:cover;
+ height:130px;
+}
+
+.show-n-tell {
+ position:relative;
+ top: 125px;
+ background-color: red;
+ width: 100%;
+ border: 0px solid green;
 }
 
 
+/* ~~~~~~~~~~~~~~~~~ main content ~~~~~~~~~~~~~~~~~~~~ */
+
+.img-cert {
+ width: 150px;
+}
+
+footer {
+ top:3000px;
+}

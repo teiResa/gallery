@@ -11,53 +11,54 @@
   <link rel="stylesheet" href="arcade.css">
 </head>
 <body>
-  <style>
-    body {
-      padding: 5px;
-    }
-    main {
-     position: relative;
-      left: 7%;
-      width: 80%;
-      margin: 0px 5px 0px 5px;
-    }
-    img { width: 200px;}
-  </style>
-  <header class="arc-header">
+
+  <header class="menubar" role="banner">
+   <!-- <div class="accessibleMenu borderless fixed menu"></div> -->
+   <div id="arc-header" class="borderless fixed menu">
     <img src="https://teiresa.github.io/gallery/resources/fam/8bit-tei.png" alt="">
     <h1>Tei'Arcade</h1>
-    <p> Like New Grounds, but way more lame.</p>
-    <hr>
+    <p class="pipes"> | </p>
+    <p> PlayCode</p>
+   </div> 
   </header>
   <main class="row">
-    
+   <!-- <div id='loading' class="ui active dimmer">
+    <div class="ui large main loader"></div>
+   </div>  -->
+
+    <div class=" banner fixed show-n-tell" style="background-image: url('https://teiresa.github.io/gallery/img/illymation-style-banner.png');">
+     <!-- style="background-image: url( have JS change between a few banners -->
+     <div class="gradient-overlay"></div>
+    </div>
+
+    <div id="main-content" style="background-color: blueviolet;">
     <p> <tt>Once the game is launched, <small>If the WASD or arrows don't respond, click the game area. Click the A button or try your keyboard's space bar to begin.</small></tt> </p>
     <div class="row">
       <h2>The Games</h2>
       <div class="row">
         <div class="col-3">
-          <a href="https://teiresa.github.io/TeiRunner/"> TeiRunner<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/TeiRunner/"> TeiRunner<img src="#" alt="" class="img-game"></a>
         </div> 
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/chase-pizza.html"> Pizza Chaser<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/chase-pizza.html"> Pizza Chaser<img src="#" alt="" class="img-game"></a>
         </div>
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/feel-loved.html"> Feel the Love<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/feel-loved.html"> Feel the Love<img src="#" alt="" class="img-game"></a>
         </div>
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/clicking.html"> Speed Clicking Game<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/clicking.html"> Speed Clicking Game<img src="#" alt="" class="img-game"></a>
         </div>
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/dino.html"> Mama Dino Game<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/dino.html"> Mama Dino Game<img src="#" alt="" class="img-game"></a>
         </div>  
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/going-further.html"> Going Further<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/going-further.html"> Going Further<img src="#" alt="" class="img-game"></a>
         </div>
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/shark.html"> Speed Clicking Game<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/shark.html"> Speed Clicking Game<img src="#" alt="" class="img-game"></a>
         </div>
         <div class="col-3">
-          <a href="https://teiresa.github.io/gallery/resources/makecode/content/space-darts.html"> Mama Dino Game<img src="#" alt=""></a>
+          <a href="https://teiresa.github.io/gallery/resources/makecode/content/space-darts.html"> Mama Dino Game<img src="#" alt="" class="img-game"></a>
         </div>  
 
       </div>
@@ -68,22 +69,23 @@
         <tt>Thank you, Microsoft.</tt></p>
       <div class="row">
         <div class="col-2">
-          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/space-cert.png"></img>
+          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/space-cert.png" class="img-cert">
         </div>
         <div class="col-2">
-          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/shark-cert.png"></img>
+          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/shark-cert.png" class="img-cert" class="img-cert"></img>
         </div><div class="col-2">
-          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/racer-cert.png"></img>
+          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/racer-cert.png" class="img-cert" class="img-cert"></img>
         </div><div class="col-2">
-          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/collector-cert.png"></img>
+          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/collector-cert.png" class="img-cert"></img>
         </div><div class="col-2">
-          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/clicker-cert.png"></img>
+          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/clicker-cert.png" class="img-cert"></img>
         </div><div class="col-2">
-          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/stories-cert.png"></img>
+          <img src="https://teiresa.github.io/gallery/resources/makecode/content/certificates/stories-cert.png" class="img-cert"></img>
         </div>
           
       </div>
     </div>
+   </div>
   </main>
 
   <footer>
