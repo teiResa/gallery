@@ -1,0 +1,18 @@
+/* $orange: f76820; */
+/* blue : 006f7e , 005e6c writing:cce2ff */
+.arc-header{
+ background-color: #f76820;
+ display: flex;
+}
+
+.arc-header h1, p  {
+ color: #fefefe;
+}
+
+.arc-header img {
+ width: 50px;
+ padding-top: 7px;
+ padding-bottom: 7px;
+}
+
+
