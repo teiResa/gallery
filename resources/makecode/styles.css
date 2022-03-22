@@ -1,1 +1,215 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  font-family: Share Tech Mono,Monaco,Menlo,Ubuntu Mono,Consolas,source-code-pro,monospace;
+}
+
+html {
+  /* overflow:hidden; */
+  overflow-x: hidden;
+  font-size: 16px !important;
+  /* display: grid; */
+  height: 100%;
+  width: 100%;
+}
+
+.button-hover {
+  background-color: #cacbcd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.05)));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#arc-header {
+  background-color: #f76820;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#arc-header .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#arc-header .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#arc-header .header-right .settings-icon, #arc-header .header-right .user-icon {
+  width: 50px;
+}
+
+#arc-header .header-right .settings-icon:hover, #arc-header .header-right .user-icon:hover {
+  background-color: #de5d1d;
+}
+
+#arc-header .header-right .settings-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+}
+
+#arc-header .header-right .settings-icon #cog {
+  font-size: larger;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#arc-header .header-right .settings-icon:hover {
+  font-size: larger;
+}
+
+#arc-header .header-right .user-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65px;
+  height: 50px;
+  margin-right: 11px;
+}
+
+#arc-header .header-right .user-icon #ring {
+  font-weight: 100;
+  -webkit-text-stroke: 2px #f76820;
+}
+
+#arc-header .header-right .user-icon #ring:hover {
+  -webkit-text-stroke: #de5d1d;
+}
+
+#arc-header .header-right .user-icon #avatar {
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+#arc-header img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 23px;
+  max-height: 23px;
+  min-width: 23px;
+  min-height: 23px;
+  margin: 0 3px 5px 14px;
+}
+
+#arc-header h1, #arc-header p, #arc-header i {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #FEFEFE;
+}
+
+#arc-header h1 {
+  font-weight: normal;
+  font-size: 1.0em;
+}
+
+#arc-header .pipes {
+  padding: 3px 10px 0 10px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#arc-header p {
+  font-weight: bold;
+  font-size: medium;
+  padding-top: 8px;
+}
+
+.banner {
+  border: 0;
+  margin-top: -2.1rem !important;
+  margin-bottom: 2.1rem !important;
+  padding: 0;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+}
+
+.banner .gradient-overlay {
+  position: relative;
+  height: 100%;
+  width: 40rem;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #000), to(transparent));
+  background: linear-gradient(90deg, #000 0, transparent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .gradient-overlay .overlay-content {
+  color: #FEFEFE;
+  max-width: 300px;
+  margin: 0;
+  padding-left: 60px;
+}
+
+.show-n-tell {
+  position: relative;
+  z-index: -1;
+  background-color: #038a9a;
+  width: 100%;
+}
+
+.content-row {
+  width: 90%;
+  margin-left: 10%;
+}
+
+.content-row .content-header {
+  margin: 0;
+  padding-left: 60px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.content-row .view-all-button {
+  color: #f76820;
+}
+
+.img-cert {
+  width: 150px;
+}
+/*# sourceMappingURL=styles.css.map */

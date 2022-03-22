@@ -16,26 +16,55 @@
   <header class="menubar" role="banner">
    <!-- <div class="accessibleMenu borderless fixed menu"></div> -->
    <div id="arc-header" class="borderless fixed menu">
-    <img src="https://teiresa.github.io/gallery/resources/fam/8bit-tei.png" alt="">
-    <h1>Tei'Arcade</h1>
-    <p class="pipes"> | </p>
-    <p> PlayCode</p>
+    <div class="col-6 header-left">
+     <div class="row">
+      <img src="https://teiresa.github.io/gallery/resources/fam/8bit-tei.png" alt="">
+           <h1>Tei'Arcade</h1>
+           <p class="pipes"> | </p>
+           <p> PlayCode</p>
+     </div> 
+    </div>
+    
+    <div class="col-4 offset-3 header-right">
+     <div class="row">
+      <div class="settings-icon">
+        <i class="fas fa-cog" id="cog"></i>
+       </div>
+       <div class="fa-stack user-icon icon-stack">
+        <!-- https://fontawesome.com/v5/docs/web/style/stack -->
+        <i class="far fa-circle fa-stack-2x" id="ring"></i>
+        <i class="far fa-user-circle fa-stack-1x" id="avatar" ></i>
+       </div>
+     </div>
+       
+    </div>
    </div> 
+
+   
   </header>
   <main class="row">
    <!-- <div id='loading' class="ui active dimmer">
     <div class="ui large main loader"></div>
    </div>  -->
 
-    <div class=" banner fixed show-n-tell" style="background-image: url('https://teiresa.github.io/gallery/img/illymation-style-banner.png');">
+    <div class="row-2 banner fixed show-n-tell" style="background-image: url('https://teiresa.github.io/gallery/img/illymation-style-banner.png');">
      <!-- style="background-image: url( have JS change between a few banners -->
-     <div class="gradient-overlay"></div>
+     <div class="gradient-overlay">
+      <div class="overlay-content">
+       <p> <tt>Once the game is launched, Click the A button or try your keyboard's space bar to begin.</small></tt> </p>
+      </div>
+      <!-- <div class="overlay-content"></div> the button -->
+      <!-- <div class="overlay-content"></div> the dots -->
+     </div>
     </div>
 
-    <div id="main-content" style="background-color: blueviolet;">
-    <p> <tt>Once the game is launched, <small>If the WASD or arrows don't respond, click the game area. Click the A button or try your keyboard's space bar to begin.</small></tt> </p>
-    <div class="row">
-      <h2>The Games</h2>
+    <div class="row" id="main-content">
+    
+    <div class="row content-row" id="the-games">
+      <h2 class="content-header">The Games</h2>
+      <a href="#" class="view-all-button" title="view all of your projects"> View All</a>
+      <button type="button" class="btn btn-outline-primary but-upload" title="upload a project"> <i class="fas fa-upload "></i></button>
+      
       <div class="row">
         <div class="col-3">
           <a href="https://teiresa.github.io/TeiRunner/"> TeiRunner<img src="#" alt="" class="img-game"></a>
@@ -64,8 +93,8 @@
 
       </div>
     </div>
-    <div class="row">
-      <h2>Certificates from the Journey</h2>
+    <div class="row content-row" id="the-certs">
+      <h2 class="content-header">Certificates from the Journey</h2>
       <p>I know, I know. I put this section for the fun of it. What? They are cute. <br>
         <tt>Thank you, Microsoft.</tt></p>
       <div class="row">
@@ -90,6 +119,7 @@
   </main>
 
   <footer>
+   <hr>
     <div class="container row">
 
     <ul>
@@ -102,8 +132,16 @@
 
     </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  
+
+
+ <!-- fontawesome kit-->
+ <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
+
+
+ 
+ <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="js/scripts.js"></script>
 </body>
 </html>
