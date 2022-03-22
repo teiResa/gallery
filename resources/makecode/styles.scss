@@ -1,17 +1,28 @@
 $orange: #f76820;
-$orange-dark: #de5d1d;
+$orange-lowlight: #de5d1d;
+$orange-dark: #f87633;
 $white: #FEFEFE;
 $yellow-light: #fef3e0;
+$font-black: #000000DE;
+$grey-black: #212121;
+$purple: #AB2790;
 $reddish: #ff0000;
-$green: #0000ff;
+$green: #2ecc71;
 $blue-light: #038a9a;
 $blue-lowlight: #058392;
 $blue-dark: #006f7e;
 $blue-dark-lowlight: #005e6c;
+$grey-light: #ededed;
+$grey-light-lowlight: #cececf;
+$grey-dark: #b4b5b6 ;
+$grey-dark-lowlight: #959698 ;
+$grey-loading: #919c9d;
+$grey-carousel: #e9eef2;
 
 *{
  font-family: 
  Share Tech Mono,Monaco,Menlo,Ubuntu Mono,Consolas,source-code-pro,monospace ;
+ color: $font-black;
 }
 
 html {
@@ -23,6 +34,27 @@ html {
   height:100%;
   width:100%;
 
+  p{
+   font-family: 'Courier New', Courier, monospace;
+   color: $font-black;
+  }
+
+}
+
+main {
+ background-color: $yellow-light;
+ 
+}
+
+footer {
+ background-color: $yellow-light;
+ font-size: 12.8px;
+ color: $font-black;
+
+
+  // ul {
+   
+  // }
 }
 
 .button {
@@ -32,7 +64,7 @@ html {
  background-image: linear-gradient(transparent,rgba(0,0,0,.05));
  color: rgba(0,0,0,.8);
 
- box-shadow: inset 0 0 0 1px rgb(34 36 38 / 15%), inset 0 -0.3em 0 0 rgb(34 36 38 / 15%);
+ // box-shadow: inset 0 0 0 1px rgb(34 36 38 / 15%), inset 0 -0.3em 0 0 rgb(34 36 38 / 15%);
  }
 
  &:hover, &:focus {
@@ -47,6 +79,8 @@ html {
  align-content: center;
  align-items: center;
  width: 100%;
+ z-index: 3;
+ position: absolute;
 
 
 .header-left {
@@ -70,7 +104,7 @@ html {
   // padding: 14px 2px 14px 2px;
   
   &:hover {
-   background-color: $orange-dark;
+   background-color: $orange-lowlight;
   }
  }
 
@@ -100,7 +134,7 @@ html {
    -webkit-text-stroke: 2px $orange;
 
    &:hover {
-    -webkit-text-stroke:$orange-dark;
+    -webkit-text-stroke:$orange-lowlight;
    }
   }
 
@@ -183,10 +217,9 @@ html {
 
 .show-n-tell {
  position:relative;
- z-index: -1;
- background-color: $blue-light;
+ z-index: 1;
+ background-color: red;
  width: 100%;
- 
 }
 
 
@@ -195,15 +228,28 @@ html {
  width: 90%;
  margin-left: 10%;
 
+
+ .header-left{
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: row;
+ }
+
+ .header-right{
+   justify-content: space-between;
+ }
+
  .content-header {
     margin: 0;
-    padding-left: 60px;
+    padding-left: 40px;
     font-size: 20px;
-    color: rgba(0,0,0,.87);
+    color: $font-black;
  }
 
  .view-all-button {
   color: $orange;
+  font-size: 14px;
+  font-weight: 100;
  }
 }
 
