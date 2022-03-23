@@ -21,6 +21,7 @@ $grey-loading: #919c9d;
 $grey-carousel: #e9eef2;
 
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 *{
  font-family: 
@@ -38,9 +39,8 @@ html {
   height:100%;
   width:100%;
 
-  body {
-   background-color: $yellow-light;
-  }
+  -webkit-overflow-scrolling: touch;
+
 
   p{
    font-family: Share Tech Mono,Monaco,Menlo,Ubuntu Mono,Consolas,source-code-pro,monospace ;
@@ -49,7 +49,12 @@ html {
 
 }
 
-
+  body {
+   background-color: $yellow-light;
+   height: 100%;
+   padding-bottom: 155px;
+   // overflow: scroll; <!-- puts the scroll under the header -->
+  }
  
 
 
@@ -78,14 +83,63 @@ html {
  align-content: center;
  align-items: center;
  width: 100%;
+ max-height: 45px;
  z-index: 3;
  position: absolute;
-
+ 
+ h1, p, i  {
+  align-self: center;
+  color: $white;
+ }
 
 .header-left {
  display: flex;
  justify-content: flex-start;
  align-items: center;
+ margin-top: 4px;
+
+ img {
+  align-self: center;
+  max-width: 23px;
+  max-height:23px;
+  min-width: 23px;
+  min-height:23px;
+  margin: 0 3px 5px 14px;
+ }
+
+ h1, p, i  {
+  align-self: center;
+  color: $white;
+  font-family: Lato;
+ }
+
+ h1 {
+  align-self: center;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: -1px;
+  margin-top: 3px;
+  opacity: 0.8;
+ }
+
+ .pipes {
+  align-self: center;
+  padding: 3px 10px 0 10px;
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: lighter;
+  -webkit-text-stroke: .5px $orange;
+ }
+
+ p {
+  align-self: center;
+  font-weight: bold;
+  font-size: .9em;
+  letter-spacing: 0px;
+  margin-top: 4px;
+  padding-top: 8px;
+ }
+
 }
 
 .header-right {
@@ -99,8 +153,9 @@ html {
 
 
  .settings-icon, .user-icon {
-  width: 50px;
+  width: 45px;
   // padding: 14px 2px 14px 2px;
+  opacity: 0.9;
   
   &:hover {
    background-color: $orange-lowlight;
@@ -111,6 +166,7 @@ html {
    display: flex;
    justify-content: center;
    width: 50px;
+   height: 46px;
 
    #cog {
     font-size: larger;
@@ -125,8 +181,8 @@ html {
   display: flex;
   justify-content: center;
   width: 65px;
-  height: 50px;
-  margin-right: 11px;
+  height: 46px;
+  // margin-right: 11px;
 
   #ring {
    font-weight: 100;
@@ -148,37 +204,7 @@ html {
 }
 
 
- img {
-  align-self: center;
-  max-width: 23px;
-  max-height:23px;
-  min-width: 23px;
-  min-height:23px;
-  margin: 0 3px 5px 14px;
- }
-
- h1, p, i  {
-  align-self: center;
-  color: $white;
- }
-
- h1 {
-  font-weight: normal;
-  font-size: 20px;
- }
-
- .pipes {
-  padding: 3px 10px 0 10px;
-  font-size: 22px;
-  font-weight: normal;
- }
-
- p {
-  font-weight: bold;
-  font-size: medium;
-  padding-top: 8px;
- }
-
+ 
 }// end of #arc-header 
 
 .banner {
@@ -189,7 +215,7 @@ html {
  border-radius:0;
  background-repeat:no-repeat;
  background-size:cover;
- height:220px;
+ height:200px;
 
  .gradient-overlay{
   position: relative;
@@ -204,6 +230,11 @@ html {
 
     .overlay-content {
      
+     p{
+      color: white;
+      letter-spacing: 0.5px;
+     }
+
      color: $white;
      max-width: 300px;
      margin: 0;
@@ -215,16 +246,23 @@ html {
 
 .show-n-tell {
  position:relative;
+ margin-top: 43px !important;
  z-index: 1;
  background-color: red;
  width: 100%;
+}
+
+.main-content {
+ height: 100%;
 }
 
 
 
 .content-row {
  width: 90%;
- margin-left: 10%;
+ margin-left: 40px;
+ // this might ^ be the footer's problem in max-w 670px mode
+ margin-bottom: 30px;;
 
 
  .header-left{
@@ -240,6 +278,7 @@ html {
  .content-header {
     margin: 0;
     padding-left: 40px;
+    // this might ^ be the footer's problem in max-w 670px mode
     font-size: 20px;
     color: $font-black;
  }
@@ -257,10 +296,13 @@ html {
 
 footer {
  // this makes it a "pushed footer"
-   position:absolute;
-   bottom:0;
+   position: absolute ;
+   bottom: 0 !important;
    width:100%;
-   height: 55px; 
+   height: 30px; 
+   // margin-top: 30px;
+   margin-top:auto;
+   background-color: $yellow-light;
    
 
  font-size: 10.9px;
@@ -268,11 +310,12 @@ footer {
 
  hr{
   border:1.1px $yellow-light solid;
+  // margin: 2px 0px;
  }
 
  .footer-contents {
   display: flex;
-  justify-content: center
+  justify-content: center;
  }
 
   a{
@@ -310,4 +353,61 @@ footer {
 
 
 
+}
+
+@media screen and (min-width: 1000px) {
+
+ #arc-header{
+
+  .header-right {
+   //  offset-4... so it stays in the same spot when resized to full screen. (─‿‿─)
+   justify-content: flex-start;
+   // margin-left: 20px;
+   margin-left: 17%;
+  }
+ }
+}
+
+@media screen and (max-width:670px) {
+
+
+ .content-row {
+  width: 100%;
+  margin-left: 10px;
+  // this was the footer's problem in max-w 670px mode
+ }
+
+ footer {
+  a{
+ padding-left: 8px;
+    margin-left: 8px;
+   i{
+  margin-right: 4px;
+   }}}
+}
+
+@media screen and (max-width:590px) {
+
+
+ .content-row {
+  width: 100%;
+  margin-left: 0px;
+  // this was the footer's problem in max-w 670px mode
+ }
+
+ footer {
+  // flex-wrap: wrap;
+  // width: 95%;
+
+  // .row {
+  //  margin-right: -255px;
+  //  margin-left: -255px;
+  // }
+
+  a{
+ padding-left: 4px;
+    margin-left: 4px;
+   i{
+  margin-right: 0px;
+   }}}
 }
