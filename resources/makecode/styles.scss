@@ -403,10 +403,10 @@ footer {
  }
 }
 
-@media not all, only screen and (max-width: 991px)
- .landscape.only {
-    display: none !important;
-}
+// @media not all, only screen and (max-width: 991px)
+//  .landscape.only {
+//     display: none !important;
+// }
 
 @media screen and (max-width:670px) {
 
