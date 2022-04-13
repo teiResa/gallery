@@ -402,6 +402,12 @@ footer {
    margin-left: 17%;
   }
  }
+
+ .show-n-tell {
+  -webkit-transform: translate(100px);
+  -ms-transform: translate(100px);
+  transform: translate(150px);
+ }
 }
 
 // @media not all, only screen and (max-width: 991px)
