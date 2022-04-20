@@ -22,8 +22,10 @@
    <!-- <div class="accessibleMenu borderless fixed menu"></div> -->
    <div id="arc-header" class="borderless fixed menu">
     <div class="col-6 header-left">
-     <div class="row">
-      <img src="https://teiresa.github.io/gallery/resources/fam/8bit-tei.png" alt="">
+     <div class="row"  style="cursor: pointer;" onclick="openInNewTab('https://teiresa.github.io');" >
+      
+      <img src="https://teiresa.github.io/gallery/resources/fam/8bit-tei.png" alt=" ">
+           <span class="sr-only">Tei's Arcade PlayCode </span>
            <h1 lang="en">Tei'Arcade</h1>
            <!-- <h1 lang="fr">L'Arcade de Tei</h1> -->
            <p class="pipes"> | </p>
@@ -34,13 +36,21 @@
     
     <div class="col-4 offset-3 header-right">
      <div class="row">
-      <div class="settings-icon">
+      <div class="settings-icon" tabindex="0">
         <i class="fas fa-cog" id="cog"></i>
+        <span class="sr-only">Settings </span>
+
+        <!-- 
+         <div class="row" style="cursor: pointer;" onclick="openInNewTab('fr/arcade.html');" >
+
+          for linking to the french page with just js
+         -->
        </div>
-       <div class="fa-stack user-icon icon-stack">
+       <div class="fa-stack user-icon icon-stack" tabindex="0">
         <!-- https://fontawesome.com/v5/docs/web/style/stack -->
         <i class="far fa-circle fa-stack-2x" id="ring"></i>
         <i class="far fa-user-circle fa-stack-1x" id="avatar" ></i>
+        <span class="sr-only">User Menu </span>
        </div>
      </div>
        
@@ -65,14 +75,15 @@
      </div>
     </div>
 <!-- 'https://teiresa.github.io/gallery/img/illymation-style-banner.png -->
-    <div class="row main-content">
+    <div class="row main-content" >
     
     <div class="row content-row" id="the-games">
      <div class="ui heading">
       <div class="column" role="button" style="z-index: 1;">
        <h2 class="ui header myproject-header" >
         The Games
-        <a href="#" class="view-all-button" title="view all projects"> View All</a>
+        
+        <!-- <a href="#" class="view-all-button" title="view all projects"> View All</a> -->
         <span class="view-all-button"  title="View all projects" role="button" tabindex="0"> View All</span>
        </h2></div>
        <div class="column right aligned" style="z-index: 1;">
@@ -94,7 +105,7 @@
        -->
 
       <div class="row">
-        <div class="col-3">
+        <div class="col-3"  >
           <a href="https://teiresa.github.io/TeiRunner/"> TeiRunner<img src="#" alt="" class="img-game"></a>
         </div> 
         <div class="col-3">
@@ -173,4 +184,11 @@
  
  <script src="js/scripts.js"></script> -->
 
+
+ <script>
+  function openInNewTab(url) {
+   window.open(url, '_blank').focus();
+  }
+
+ </script>
 </html>
