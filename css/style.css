@@ -9,12 +9,30 @@ body {
   overflow-y: scroll;
 }
 
+/* @media screen and (max-width: 1250px) {
+ header {
+  background-image: url("https://teiresa.github.io/gallery/img/fam-heads-YT-split-taller2.png");
+  
+  padding: 80px 0;
+  left: 70px;
+  top: 50px;
+}
+
+h1 {
+ font-size: 48px;
+ margin: 0 0 16px 0;
+ background-color: red;
+}
+
+} */
+
 
 /* everything header is here */
 header {
   color: #619196;
-  background-color: #ECD5E3;
-  background-image: url("https://teiresa.github.io/gallery/img/fam-heads-YT-split-taller2.png");
+  background-color: #b296a0;
+  /* background-image: url("https://teiresa.github.io/gallery/img/fam-heads-YT-split-taller2.png"); */
+  background-image: url("https://teiresa.github.io/gallery/img/fam-heads-YT-split-long.png");
   
   padding: 80px 0;
   text-align: center;
