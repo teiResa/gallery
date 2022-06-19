@@ -45,6 +45,14 @@ header {
    the container div will have the width of 900px, so we align it to
    the center of the screen. */
 }
+.container::before {
+ content: '';
+    background-image: url("https://teiresa.github.io/gallery/img/illymation-style-banner.png"); background: url("https://teiresa.github.io/gallery/img/illymation-style-banner.png");
+    position:absolute;
+    top:0px;
+    left:0px;
+    
+}
 h1 {
   font-size: 48px;
   margin: 0 0 16px 0;
