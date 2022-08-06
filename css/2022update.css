@@ -1,0 +1,52 @@
+section {
+ padding: 40px 0;
+ text-align: center;
+}
+.features {
+ background: #ddd;
+ color: #000;
+}
+
+
+.lb-container {
+ min-width: 300px;
+}
+
+.item {
+ width 50%;
+}
+
+.img-fluid {
+ width:40%;
+ height: 40%;
+ margin-bottom: 30px;
+}
+
+.img-smaller {
+ width: 200px; 
+ height: auto;
+}
+
+.file-type{
+ position: absolute;
+ width: 2.5em;
+ border-radius: 90%;
+ background-color: lightgrey;
+ color: grey;
+ font-weight: bold;
+ opacity: 0.6;
+ right: 40px;
+ bottom: 30px;
+}
+
+.features {
+ background: #ddd;
+ color: #000;
+}
+
+
+
+section {
+ padding: 40px 0;
+ text-align: center;
+}
