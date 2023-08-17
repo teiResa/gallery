@@ -20,6 +20,11 @@ section {
  /* margin-bottom: 30px; */
 }
 
+.img-fit {
+ width: 150px;
+ object-fit: cover;
+}
+
 .img-smaller {
  width: 200px; 
  height: auto;
